@@ -7,7 +7,7 @@ class PostService {
 
     }
     getAll = async () => {
-        let sql = 'select p.content,p.image,p.role,p.time, u.userName from users u join posts p on u.idUser = p.idUser'
+        let sql = `select p.idPost, p.content,p.image,p.role,p.time, u.userName from users u join posts p on u.idUser = p.idUser`
         let posts = await this.postRepository.query(sql)
 
         return posts
