@@ -4,7 +4,7 @@ export const checkRole = async (req, res, next) => {
         next()
     } else {
         res.status(403).json({
-            message: 'Bạn Không Có Quyền'
+            message: 'you have no permission'
         })
     }
 }

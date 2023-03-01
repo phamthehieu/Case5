@@ -17,7 +17,7 @@ app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.use(express_1.default.static('./public'));
 app.use('', router_1.router);
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log(' Connect Server! ');
 });
 //# sourceMappingURL=index.js.map
